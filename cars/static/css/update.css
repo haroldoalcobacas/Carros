@@ -1,0 +1,112 @@
+
+.update-form-container {
+  max-width: 800px; 
+  margin: 0 auto; /* Centraliza o contêiner */
+  padding: 20px 80px; /* Espaçamento interno */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.update-form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: separate;
+  border-spacing: 0 10px; /* Espaço entre as linhas */
+}
+
+table th, table td {
+  text-align: left;
+  font-size: 1rem;
+}
+
+table th {
+  font-weight: normal;
+  color: #555;
+}
+
+table td {
+  width: 100%;
+}
+
+table td label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+table td input, 
+table td select, 
+table td textarea {
+  width: calc(100% - 20px); /* Subtrai o padding horizontal */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+table td input:focus, 
+table td select:focus, 
+table td textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.buttons-container input[type="submit"],
+.buttons-container a {
+  padding: 12px 24px;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex; /* Adicionado para alinhar o texto */
+  align-items: center; /* Alinhamento vertical do texto */
+  justify-content: center; /* Alinhamento horizontal do texto */
+  width: 100%; /* Tamanho igual para os botões */
+  max-width: 150px; /* Limitar a largura máxima dos botões */
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}

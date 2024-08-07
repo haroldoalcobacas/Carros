@@ -1,0 +1,92 @@
+/* Contêiner do Formulário */
+.form-container {
+    max-width: 600px; /* Alinha com o limite de largura da interface */
+    margin: 0 auto; /* Centraliza o contêiner */
+    padding: 20px 30px; /* Espaçamento interno */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura total */
+  }
+  
+  /* Título do Formulário */
+  .form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Estilo da Tabela */
+  table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Espaço entre as linhas */
+  }
+  
+  /* Estilo das Células da Tabela */
+  table th, table td {
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  table th {
+    font-weight: normal;
+    color: #555;
+  }
+  
+  table td {
+    width: 100%;
+  }
+  
+  table td label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Estilo dos Campos do Formulário */
+  table td input, 
+  table td select, 
+  table td textarea {
+    width: calc(100% - 20px); /* Subtrai o padding horizontal */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  table td input:focus, 
+  table td select:focus, 
+  table td textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Estilo dos Botões */
+  input[type="submit"] {
+    padding: 12px 24px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: flex; /* Adicionado para alinhar o texto */
+    align-items: center; /* Alinhamento vertical do texto */
+    justify-content: center; /* Alinhamento horizontal do texto */
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  
