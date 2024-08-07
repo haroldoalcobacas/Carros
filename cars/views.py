@@ -1,5 +1,3 @@
-
-
 from django.urls import reverse_lazy
 from cars.models import Car
 from cars.forms import CarModelForm

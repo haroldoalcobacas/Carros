@@ -30,7 +30,8 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS',default=[], cast=Csv())
 
-
+# Definir a chave da API no settings.py
+OPENAI_API_KEY = config('OPENAI_API_KEY')
 
 # Application definition
 
@@ -80,13 +81,13 @@ WSGI_APPLICATION = "app.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": config('POSTGRES_DB'),
-        "USER": config('POSTGRES_USE'),
-        "PASSWORD": config('POSTGREE_PASSWORD'),
-        "HOST": config('DB_HOST','localhost'),
-        "PORT": '5432',
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': config('POSTGRES_DB'),
+        'USER': config('POSTGRES_USER'),
+        'PASSWORD': config('POSTGRES_PASSWORD'),
+        'HOST': config('POSTGRES_HOST'),
+        'PORT': config('POSTGRES_PORT'),
     }
 }
 
@@ -140,3 +141,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+print(config('POSTGRES_DB', default='valor_default'))
